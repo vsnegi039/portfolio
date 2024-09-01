@@ -1,0 +1,72 @@
+@import '../../css-config/mixin.scss';
+.About {
+    width: 100%;
+    min-height: 70vh;
+    margin-top: 50px;
+    @include lg{
+        margin-top: 0;
+    }
+
+    .content {
+        max-width: 70%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        @include lg{
+            flex-direction: row;
+            max-width: 53%;
+        }
+
+        img {
+            margin-top: 5px;
+            height: 250px;
+            width: 250px;
+            border-radius: 4%;
+            @include lg{
+                height: 300px;
+                    width: 300px;
+            }
+        }
+
+        .about-me {
+            max-width: 350px;
+            text-align: left;
+            margin-top: -30px;
+            @include lg{
+                margin-top: 0;
+            }
+
+            span {
+                color: blue;
+                font-weight: 700;
+            }
+
+            h2 {
+                margin-top: 15px;
+                font-size: 16pt;
+                width: 400px;
+            }
+
+            img {
+                height: 23px;
+                width: 23px;
+                position: absolute;
+                margin-top: 75px;
+                margin-left: 228px;
+                @include lg{
+                    margin-top: 47px;
+                    margin-left: 320px;
+                }
+            }
+
+            p {
+                margin-top: 25px;
+                color: #919091;
+                @include lg{
+                    width: 420px;
+                }
+            }
+        }
+    }
+}

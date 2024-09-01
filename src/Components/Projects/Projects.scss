@@ -1,0 +1,45 @@
+@import '../../css-config/mixin.scss';
+.Pro {
+    width: 80%;
+    margin: 0 auto;
+    @include lg{
+        width: 58%;
+    }
+    .con {
+        margin-left: 8px;
+        margin-top: 50px;
+        text-align: left;
+        @include lg{
+            margin-left: 40px;
+            margin-top: 0px;
+        }
+
+        .neela {
+            color: blue;
+            font-weight: 700;
+            font-size: 16pt;
+        }
+
+        h3 {
+            font-weight: 700;
+            font-size: 16pt;
+            width: 300px;
+            @include lg{
+                width: fit-content;
+            }
+        }
+
+        .lu {
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            margin-left: 165px;
+            margin-top: -21px;
+            @include lg{
+                margin-left: 466px;
+                margin-top: -20px;
+            }
+        }
+    }
+}
+

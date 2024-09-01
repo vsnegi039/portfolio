@@ -1,0 +1,179 @@
+@import '../../../css-config/mixin.scss';
+
+.singleProduct {
+    width: 100%;
+    margin-top: 30px;
+    @include lg{
+        margin-top: 80px;
+    }
+    .content {
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        gap: 70px;
+        flex-direction: column;
+
+        @include lg {
+            flex-direction: row;
+        }
+
+        .left {
+            img {
+                height: 220px;
+                width: 300px;
+                margin-left: -70px;
+                border: 2px solid rgba(0, 0, 0, 0.3);
+                margin-top: -34px;
+                @include lg{
+                    height: 300px;
+                    width: 500px;
+                    margin-top: 0;
+                    margin-left: -75;
+                }
+            }
+        }
+
+        .marleft {
+            margin-left: 70px;
+        }
+
+        .right {
+            span {
+                font-weight: 700;
+            }
+
+            p {
+                margin-top: 7px;
+                text-align: left;
+                color: #919091;
+                @include lg{
+                    margin-top: 25px;
+                }
+            }
+
+            .technologies {
+                margin-top: 10px;
+                display: flex;
+                @include lg{
+                    margin-top: 20px;
+                }
+                ul {
+                    width: 100%;
+                    list-style-type: none;
+                    display: flex;
+                    gap: 20px;
+                    font-weight: 700;
+                }
+            }
+
+            .links {
+                margin-top: 20px;
+                display: flex;
+                gap: 80px;
+                @include lg{
+                    margin-top: 50px;
+                }
+                span {
+                    font-weight: 600;
+                }
+
+                .ss {
+                    font-size: 20pt;
+                    position: absolute;
+                    padding-left: 5px;
+                    margin-top: -5px;
+                }
+            }
+        }
+    }
+
+    .rev {
+        margin: 0 auto;
+        
+        display: flex;
+        gap: 70px;
+        flex-direction: column-reverse;
+
+        @include lg {
+            flex-direction: row;
+            width: 82%;
+        }
+
+        .left {
+            img {
+                height: 220px;
+                width: 300px;
+                margin-left: 0px;
+                border: 2px solid rgba(0, 0, 0, 0.3);
+                @include lg{
+                    margin-left: -75px;
+                    height: 300px;
+                    width: 500px;
+                }
+            }
+        }
+
+        // .marleft {
+        //     margin-left: 70px;
+        // }
+
+        .right {
+            @include lg{
+                width: 300px;
+            }
+            span {
+                font-weight: 700;
+            }
+
+            p {
+                margin-top: 7px;
+                text-align: left;
+                color: #919091;
+                @include lg{
+                    width: 272px;
+                    margin-top: 25px;
+                }
+            }
+
+            .technologies {
+                margin-top: 10px;
+                display: flex;
+                @include lg{
+                    margin-top: 20px;
+                }
+
+                ul {
+                    width: 100%;
+                    list-style-type: none;
+                    display: flex;
+                    gap: 20px;
+                    font-weight: 700;
+                }
+            }
+
+            .links {
+                margin-top: 20px;
+                display: flex;
+                gap: 80px;
+                @include lg{
+                    margin-top: 50px;
+                }
+
+                span {
+                    font-weight: 600;
+                }
+
+                .ss {
+                    font-size: 20pt;
+                    position: absolute;
+                    padding-left: 5px;
+                    margin-top: -5px;
+                }
+            }
+        }
+    }
+}
+
+.hover {
+    cursor: pointer;
+}
